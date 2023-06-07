@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praney Hirpara</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geologica&family=Kumbh+Sans:wght@400;700&family=Roboto+Mono&display=swap" rel="stylesheet">
+<body onscroll="disableScrolling()"
+      onmousewheel="enableScrolling()"
+      onclick="enableScrolling()">
+    <nav class="navbar">
+        <div class="navbar__container">
+            <img src="images/me.jpg" alt="pfp" id="pfp">
+            <a href="/" id="navbar__logo">Praney Hirpara</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/resume.html" class="navbar__links">Resume</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/projects.html" class="navbar__links">Projects</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="projects">
+        <div class="projects__container">
+            <div class="projects__content">
+                <h1>My Projects</h1>
+                <h2>Yelp Clone</h2>
+                <p>Yelp Clone is a personal project I created using the PERN stack (Postgres, Express, Node, and React) with the goal of building a simplified version of Yelp. The platform allows users to perform various actions such as writing reviews on restaurants, creating new restaurants, and editing any information already on the platform. To accomplish this, I created a database using Postgres to store information inputted by the user, and utilized Express, Node, and React for both backend logic and front-end user interface. My aim was to create a user-friendly platform with an intuitive design, that emulated the functionalities of Yelp, while also providing a unique and personalized user experience.</p>
+            </div>
+            <div class="projects__img--container1">
+                <img src="images/yelp.png" alt="pic" id="projects__img1">
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
