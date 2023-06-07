@@ -208,6 +208,14 @@
     }
 }
 
+@media screen and (max-width: 480px) {
+    #navbar__logo {
+        font-size: 1.4rem;
+        margin-right: 0;
+        left: -130px;
+    }
+}
+
 .main {
     background: #141414;
 }
@@ -350,8 +358,12 @@ background-color: #0274b3;
         font-size: 1rem;
     }
     .main__btn {
-        padding: 12px 36px;
-        margin: 2.5rem 0;
+        width: 50px;
+        height: 50px;
+    }
+    .main__buttons {
+        left: 80px;
+        top: -210px;
     }
 }
 .resume {
@@ -407,6 +419,17 @@ background-color: #0274b3;
         height: 65%;
         align-self: left;
         margin: 50px 5px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .resume__container {
+        height: 100vh;
+        width: 100%;
+    }
+    .myresume {
+        width: auto;
+        height: 50%;
     }
 }
 .projects {
