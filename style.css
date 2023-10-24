@@ -441,15 +441,19 @@ background-color: #0274b3;
     align-items: center;
     justify-self: center;
     margin: 0 auto;
-    height: 91vh;
+    height: 160vh;
     background-color: #141414;
     z-index: 1;
     width: 100%;
     max-width: 1300px;
     padding: 0 50px;
 }
+.projects__content {
+    margin-bottom: 50px;
+}
 .projects__content h1 {
     font-size: 2.8rem;
+    margin-bottom: 25px;
     background-color: #2E3192;
     background-image: linear-gradient(to top, #2E3192 0%, #1BFFFF 100%);
     background-size: 100%;
@@ -481,6 +485,14 @@ background-color: #0274b3;
 .projects__img--container1 {
     text-align: center;
 }
+.projects__img--container2 {
+    text-align: center;
+    transform: scale(1.1);
+}
+.projects__img--container3 {
+    text-align: center;
+    transform: scale(1.1);
+}
 
 @media screen and (max-width: 768px) {
     .projects {
@@ -493,11 +505,11 @@ background-color: #0274b3;
         justify-self: center;
         width: 100%;
         margin: 0 auto;
-        height: 115vh;
+        height: 225vh;
     }
     .projects__content {
         text-align: center;
-        margin-bottom: 4rem;
+        margin-bottom: 0rem;
     }
     .projects__content h1 {
         font-size: 2rem;
@@ -519,6 +531,7 @@ background-color: #0274b3;
         top: 100px;
         padding: 0;
         margin-top: 0;
+        height: 1px;
     }
         
 }
