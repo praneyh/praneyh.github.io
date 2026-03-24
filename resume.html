@@ -4,20 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Praney Hirpara</title>
+    <meta name="description" content="Praney Hirpara's resume — Software Engineer and CS + Business Analytics student at Rutgers University.">
+    <title>Resume — Praney Hirpara</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Geologica&family=Kumbh+Sans:wght@400;700&family=Roboto+Mono&display=swap" rel="stylesheet">
-<body onscroll="disableScrolling()"
-      onmousewheel="enableScrolling()"
-      onclick="enableScrolling()">
+<body>
+
+    <!-- ===== NAVBAR ===== -->
     <nav class="navbar">
         <div class="navbar__container">
-            <img src="images/me.jpg" alt="pfp" id="pfp">
+            <img src="images/me.jpg" alt="Praney Hirpara" id="pfp">
             <a href="/" id="navbar__logo">Praney Hirpara</a>
-            <div class="navbar__toggle" id="mobile-menu">
+            <div class="navbar__toggle" id="mobile-menu" aria-label="Toggle navigation">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -27,25 +29,64 @@
                     <a href="/" class="navbar__links">Home</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="/resume.html" class="navbar__links">Resume</a>
+                    <a href="/experience.html" class="navbar__links">Experience</a>
                 </li>
                 <li class="navbar__item">
                     <a href="/projects.html" class="navbar__links">Projects</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/resume.html" class="navbar__links">Resume</a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <div class="resume">
-        <div class="resume__container">
-            <div class="resume__content">
-                <h1><a href="https://drive.google.com/file/d/1hIYIrA6wWLWnk1ROk9RSjjc7OrOnjoK2/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a></h1>
-                <object data="pdf/Praney_Hirpara_Resume.pdf" type="application/pdf" class="myresume">
-                    <!-- <embed src="https://drive.google.com/file/d/1hIYIrA6wWLWnk1ROk9RSjjc7OrOnjoK2/view?usp=sharing"> -->
-                </object>
+    <!-- ===== RESUME ===== -->
+    <div class="resume-page">
+        <div class="section__container">
+            <div class="resume-page__header reveal">
+                <span class="section__label">Resume</span>
+                <h1 class="section__title">My Resume</h1>
+                <p class="section__subtitle">Software Engineer &amp; CS + Business Analytics student at Rutgers University.</p>
+                <div class="resume-page__actions">
+                    <a href="pdf/Praney_Hirpara_Resume.pdf" download="Praney_Hirpara_Resume.pdf" class="btn btn-primary">
+                        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M5 20h14v-2H5m14-9h-4V3H9v6H5l7 7 7-7z"/></svg>
+                        Download PDF
+                    </a>
+                    <a href="https://praneyh.github.io/pdf/Praney_Hirpara_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M19 19H5V5h7V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/></svg>
+                        View PDF
+                    </a>
+                </div>
             </div>
         </div>
+
+        <div class="resume__viewer reveal reveal-delay-2">
+            <object data="pdf/Praney_Hirpara_Resume.pdf" type="application/pdf" class="resume__embed">
+                <div class="resume__fallback">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6z"/><polyline points="14 2 14 8 20 8"/></svg>
+                    <p>PDF preview not available in this browser.</p>
+                    <a href="pdf/Praney_Hirpara_Resume.pdf" download="Praney_Hirpara_Resume.pdf" class="btn btn-primary">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M5 20h14v-2H5m14-9h-4V3H9v6H5l7 7 7-7z"/></svg>
+                        Download Resume
+                    </a>
+                </div>
+            </object>
+        </div>
     </div>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer__container">
+            <p class="footer__text">Built by Praney Hirpara &middot; praneyhirpara2021@gmail.com</p>
+            <div class="footer__links">
+                <a href="https://www.linkedin.com/in/praneyhirpara/" target="_blank" rel="noopener noreferrer" class="footer__link">LinkedIn</a>
+                <a href="https://github.com/praneyh" target="_blank" rel="noopener noreferrer" class="footer__link">GitHub</a>
+                <a href="mailto:praneyhirpara2021@gmail.com" class="footer__link">Email</a>
+            </div>
+        </div>
+    </footer>
+
     <script src="app.js"></script>
 </body>
 </html>

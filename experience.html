@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Praney Hirpara's work experience — Software Engineering internships at Innovative Defense Technologies and Ximple Solutions.">
+    <title>Experience — Praney Hirpara</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <img src="images/me.jpg" alt="Praney Hirpara" id="pfp">
+            <a href="/" id="navbar__logo">Praney Hirpara</a>
+            <div class="navbar__toggle" id="mobile-menu" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/experience.html" class="navbar__links">Experience</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/projects.html" class="navbar__links">Projects</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/resume.html" class="navbar__links">Resume</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ===== EXPERIENCE ===== -->
+    <div class="experience-page">
+        <div class="section__container">
+
+            <div class="experience-page__header reveal">
+                <span class="section__label">Work Experience</span>
+                <h1 class="section__title">Where I've Worked</h1>
+                <p class="section__subtitle">Software engineering internships building real systems in production environments.</p>
+            </div>
+
+            <div class="exp__timeline">
+
+                <!-- IDT -->
+                <div class="exp__card reveal reveal-delay-1">
+                    <div class="exp__card-top">
+                        <div class="exp__logo idt">IDT</div>
+                        <div class="exp__info">
+                            <div class="exp__company">Innovative Defense Technologies</div>
+                            <div class="exp__role">Software Engineer Intern</div>
+                            <div class="exp__meta">
+                                <span>May 2025 – May 2026</span>
+                                <span class="exp__meta-sep">·</span>
+                                <span>Mount Laurel, NJ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="exp__bullets">
+                        <li class="exp__bullet">Developed a robust Python-based KLV metadata decoder for MISB 0601 and 0903 standards to extract, decode, and align telemetry data with MPEG-TS video frames, supporting both JSON and CSV export formats for interoperability.</li>
+                        <li class="exp__bullet">Built an interactive Tkinter-based data visualization UI integrating matplotlib and pandas, allowing users to generate plots from CSV and JSON metadata, visualize target movement and attributes over time, and interact with embedded VChip image chips.</li>
+                        <li class="exp__bullet">Implemented intelligent data-cleaning and anomaly detection logic using pandas, identifying outlier packets based on spatial discontinuities and filtering corrupted entries while retaining valid records across CSV and JSON inputs.</li>
+                    </ul>
+                    <div class="exp__tags">
+                        <span class="exp__tag">Python</span>
+                        <span class="exp__tag">pandas</span>
+                        <span class="exp__tag">Tkinter</span>
+                        <span class="exp__tag">matplotlib</span>
+                        <span class="exp__tag">MPEG-TS</span>
+                        <span class="exp__tag">KLV / MISB</span>
+                    </div>
+                </div>
+
+                <!-- Ximple -->
+                <div class="exp__card reveal reveal-delay-2">
+                    <div class="exp__card-top">
+                        <div class="exp__logo ximple">X</div>
+                        <div class="exp__info">
+                            <div class="exp__company">Ximple Solutions</div>
+                            <div class="exp__role">Software Engineer Intern</div>
+                            <div class="exp__meta">
+                                <span>Jun. 2024 – Aug. 2024</span>
+                                <span class="exp__meta-sep">·</span>
+                                <span>Kensington, MD (Remote)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="exp__bullets">
+                        <li class="exp__bullet">Developed a GraphQL API using Java and Spring Boot to efficiently fetch data from various large datasets, enhancing data retrieval performance and scalability.</li>
+                        <li class="exp__bullet">Leveraged Python and its frameworks, pandas and mlxtend, to identify product relationships (complementary and substitute) with a 68% success rate, integrating results into an application via FastAPI.</li>
+                        <li class="exp__bullet">Worked with PostgreSQL and MongoDB databases to manage and manipulate data, ensuring seamless integration and data consistency across platforms.</li>
+                        <li class="exp__bullet">Collaborated with cross-functional teams to design and implement API endpoints, contributing to the overall architecture and improving user experience.</li>
+                    </ul>
+                    <div class="exp__tags">
+                        <span class="exp__tag">Java</span>
+                        <span class="exp__tag">Spring Boot</span>
+                        <span class="exp__tag">GraphQL</span>
+                        <span class="exp__tag">Python</span>
+                        <span class="exp__tag">FastAPI</span>
+                        <span class="exp__tag">PostgreSQL</span>
+                        <span class="exp__tag">MongoDB</span>
+                        <span class="exp__tag">mlxtend</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer__container">
+            <p class="footer__text">Built by Praney Hirpara &middot; praneyhirpara2021@gmail.com</p>
+            <div class="footer__links">
+                <a href="https://www.linkedin.com/in/praneyhirpara/" target="_blank" rel="noopener noreferrer" class="footer__link">LinkedIn</a>
+                <a href="https://github.com/praneyh" target="_blank" rel="noopener noreferrer" class="footer__link">GitHub</a>
+                <a href="mailto:praneyhirpara2021@gmail.com" class="footer__link">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

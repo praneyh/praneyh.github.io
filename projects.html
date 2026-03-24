@@ -4,20 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Praney Hirpara</title>
+    <meta name="description" content="Praney Hirpara's projects — Full-stack web apps, ML models, and browser extensions.">
+    <title>Projects — Praney Hirpara</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Geologica&family=Kumbh+Sans:wght@400;700&family=Roboto+Mono&display=swap" rel="stylesheet">
-<body onscroll="disableScrolling()"
-      onmousewheel="enableScrolling()"
-      onclick="enableScrolling()">
+<body>
+
+    <!-- ===== NAVBAR ===== -->
     <nav class="navbar">
         <div class="navbar__container">
-            <img src="images/me.jpg" alt="pfp" id="pfp">
+            <img src="images/me.jpg" alt="Praney Hirpara" id="pfp">
             <a href="/" id="navbar__logo">Praney Hirpara</a>
-            <div class="navbar__toggle" id="mobile-menu">
+            <div class="navbar__toggle" id="mobile-menu" aria-label="Toggle navigation">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -27,41 +29,117 @@
                     <a href="/" class="navbar__links">Home</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="/resume.html" class="navbar__links">Resume</a>
+                    <a href="/experience.html" class="navbar__links">Experience</a>
                 </li>
                 <li class="navbar__item">
                     <a href="/projects.html" class="navbar__links">Projects</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/resume.html" class="navbar__links">Resume</a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <div class="projects">
-        <div class="projects__container">
-            <div class="projects__content">
-                <h1>My Projects</h1>
-                <h2><a href="https://github.com/praneyh/nba_mvp_predictor" target="_blank" rel="noopener noreferrer">NBA MVP Predictor</a></h2>
-                <p>NBA MVP Predictor is a machine learning model that is used to predict the NBA's next MVP by analyzing player and team stats from 1991 to the present.</p>
+    <!-- ===== PROJECTS ===== -->
+    <div class="projects-page">
+        <div class="section__container">
+
+            <div class="projects-page__header reveal">
+                <span class="section__label">Portfolio</span>
+                <h1 class="section__title">My Projects</h1>
+                <p class="section__subtitle">Things I've built to solve real problems and explore new technologies.</p>
             </div>
-            <div class="projects__img--container1">
-                <img src="images/Empty.png" alt="pic" id="projects__img1">
-            </div>
-            <div class="projects__content">
-                <h2><a href="https://github.com/praneyh/rutgers-judgemyprof-extension" target="_blank" rel="noopener noreferrer">Rutgers JudgeMyProfessor</a></h2>
-                <p>Rutgers JudgeMyProfessor is a Google Chrome Extension in which Rutgers students can easily view professor ratings from RateMyProfessors on the Rutgers registration page.</p>
-            </div>
-            <div class="projects__img--container2">
-                <img src="images/jmppic.jpeg" alt="pic" id="projects__img1">
-            </div>
-            <div class="projects__content">
-                <h2><a href="https://github.com/praneyh/yelpclone" target="_blank" rel="noopener noreferrer"> Yelp Clone </a></h2>
-                <p>Yelp Clone is a personal project I created using the PERN stack (Postgres, Express, Node, and React) with the goal of building a simplified version of Yelp. The platform allows users to perform various actions such as writing reviews on restaurants, creating new restaurants, and editing any information already on the platform. To accomplish this, I created a database using Postgres to store information inputted by the user, and utilized Express, Node, and React for both backend logic and front-end user interface. My aim was to create a user-friendly platform with an intuitive design, that emulated the functionalities of Yelp, while also providing a unique and personalized user experience.</p>
-            </div>
-            <div class="projects__img--container3">
-                <img src="images/YelpClone.png" alt="pic" id="projects__img1">
+
+            <div class="projects__grid">
+
+                <!-- Rutgers JudgeMyProfessor -->
+                <div class="project-card reveal reveal-delay-1">
+                    <img src="images/jmppic.jpeg" alt="Rutgers JudgeMyProfessor Extension" class="project-card__image">
+                    <div class="project-card__body">
+                        <div class="project-card__tags">
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">Chrome Extension API</span>
+                            <span class="project-tag">HTML/CSS</span>
+                            <span class="project-tag">Git</span>
+                        </div>
+                        <h3 class="project-card__title">Rutgers JudgeMyProfessor</h3>
+                        <p class="project-card__desc">
+                            A <strong style="color: var(--accent-cyan);">Chrome Web Store–featured</strong> extension with <strong style="color: var(--accent-cyan);">3,000+ users</strong>, letting Rutgers students view RateMyProfessors ratings and data directly on the course registration page. Integrated an API to fetch professor data and implemented an accuracy-boosting algorithm — all without ever leaving the tab.
+                        </p>
+                        <div class="project-card__footer">
+                            <a href="https://github.com/praneyh/rutgers-judgemyprof-extension" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                                View on GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NBA MVP Predictor -->
+                <div class="project-card reveal reveal-delay-2">
+                    <div class="project-card__placeholder">🏀</div>
+                    <div class="project-card__body">
+                        <div class="project-card__tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">scikit-learn</span>
+                            <span class="project-tag">pandas</span>
+                            <span class="project-tag">Beautiful Soup</span>
+                            <span class="project-tag">Jupyter</span>
+                        </div>
+                        <h3 class="project-card__title">NBA MVP Predictor</h3>
+                        <p class="project-card__desc">
+                            Scraped, cleaned, and analyzed NBA player and team stats from Basketball Reference (1991–present). Applied Linear Regression and Random Forest models via scikit-learn to predict and rank MVP candidates, achieving <strong style="color: var(--accent-cyan);">83% accuracy</strong> after thorough backtesting and parameter tuning.
+                        </p>
+                        <div class="project-card__footer">
+                            <a href="https://github.com/praneyh/nba_mvp_predictor" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                                View on GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Yelp Clone -->
+                <div class="project-card reveal reveal-delay-3">
+                    <img src="images/YelpClone.png" alt="Yelp Clone Full-Stack App" class="project-card__image">
+                    <div class="project-card__body">
+                        <div class="project-card__tags">
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">Node.js</span>
+                            <span class="project-tag">Express.js</span>
+                            <span class="project-tag">PostgreSQL</span>
+                            <span class="project-tag">PERN Stack</span>
+                        </div>
+                        <h3 class="project-card__title">Yelp Clone</h3>
+                        <p class="project-card__desc">
+                            A full-stack web application built with the PERN stack. Users can create restaurant listings, write reviews, and edit platform content. Features a PostgreSQL database, an Express/Node REST API backend, and a responsive React frontend designed for a seamless user experience.
+                        </p>
+                        <div class="project-card__footer">
+                            <a href="https://github.com/praneyh/yelpclone" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                                View on GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer__container">
+            <p class="footer__text">Built by Praney Hirpara &middot; praneyhirpara2021@gmail.com</p>
+            <div class="footer__links">
+                <a href="https://www.linkedin.com/in/praneyhirpara/" target="_blank" rel="noopener noreferrer" class="footer__link">LinkedIn</a>
+                <a href="https://github.com/praneyh" target="_blank" rel="noopener noreferrer" class="footer__link">GitHub</a>
+                <a href="mailto:praneyhirpara2021@gmail.com" class="footer__link">Email</a>
+            </div>
+        </div>
+    </footer>
+
     <script src="app.js"></script>
 </body>
 </html>
